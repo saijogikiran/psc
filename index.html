@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Star Wars</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        img{
+            width: 30%;
+            height: 30%;
+        }
+        input{
+            width: 30%;
+            height: 30px;
+        }
+        #results{
+            
+            height: 250px;
+            color: white;
+            font-size: 20px;
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="conatiner">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.XRABhk1sDv6ALwlk2LVDJQHaDK&pid=Api&P=0&w=391&h=167" alt=""/>
+            <br>
+        <input type="text" id="query" oninput=" debouncing(main,1000)"/>
+        <div id="results"></div>
+    </div>
+</body>
+</html>
+
+<script src="index.js"></script>
